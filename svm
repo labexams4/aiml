@@ -12,8 +12,8 @@ data = np.array([
     [4.0, 1.0, 0],  
     [4.5, 1.5, 0]   
 ])
-X = data[:, :2]  # First two columns are features
-y = data[:, 2]   # Last column is the label (1 for positive, 0 for negative)
+X = data[:, :2] 
+y = data[:, 2]  
 svm_model = SVC(kernel='linear')
 svm_model.fit(X, y)
 y_pred = svm_model.predict(X)
