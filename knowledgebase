@@ -9,6 +9,7 @@ class KnowledgeBase:
     def apply_rules(self):
         changed=True
         while changed:
+            changed=False
             for condition,conclusion in self.rules:
                 if self.evaluate_condition(condition):
                     if conclusion[0] not in self.facts:
